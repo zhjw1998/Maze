@@ -1,0 +1,64 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*root类选择器给所有的元素设置样式*/
+.root {
+    -fx-font-family: "微软雅黑";
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+    -fx-background-image: url(/image/Background.jpg);
+    
+}
+.button{
+	-fx-text-fill: #006464;
+    -fx-background-color: #94D1A0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+    /*文本对齐方式*/
+   	-fx-text-alignment: center;
+   	/*无边框*/
+   	-fx-border-style: none;
+   	/*鼠标样式*/
+   	-fx-cursor: pointer;
+
+}
+/*hover伪类选择器设置鼠标移过Button时的背景色*/
+.button:hover {
+    -fx-background-color: #DFB951;
+     /*粗体*/
+	-fx-font-weight: bold;
+   	/*透明度*/
+   	-fx-opacity: 0.8;
+}
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.text {
+	-fx-background-color: #C6F4F4;
+	-fx-text-fill: #F7F7F7;
+}
+/*输入框样式*/
+.text-field {
+	-fx-background-color: #C6F4F4;
+   /*边框色*/
+   -fx-border-color: rgb(20, 20, 30);
+   /*输入文字颜色*/
+   -fx-text-fill: rgb(110, 110, 110);
+   /*边框圆角*/
+   -fx-border-radius: 50px;
+   -fx-background-radius: 50px;
+   /*内边距*/
+   -fx-padding: 5 5 5 5;
+   /*鼠标形状*/
+   -fx-cursor: pointer;
+}
+.combo-box{
+	/*边框圆角*/
+    -fx-background-color: rgb(132, 145, 47);
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+.pane{
+	 -fx-border-color: #FF0000
+}

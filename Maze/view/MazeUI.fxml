@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="paneAll" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MazeUIController">
+   <children>
+      <HBox fx:id="hBoxSelection" alignment="CENTER" layoutY="8.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="526.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="140.0" text="ROWS" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="setRow" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="170.0" promptText="15" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="130.0" text="COLS" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="setCol" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="170.0" promptText="15" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="145.0" text="WIDTH" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="setLatWid" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="170.0" promptText="25" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+         <padding>
+            <Insets left="5.0" right="15.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="hBoxBtn" alignment="CENTER" layoutX="-5.0" layoutY="53.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="526.0">
+         <children>
+            <Button fx:id="btnStart" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#on_btn_start_clicked" prefHeight="35.0" prefWidth="60.0" text="Start" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="4.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnPause" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#on_btn_pause_clicked" prefHeight="35.0" prefWidth="60.0" text="Pause" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="4.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnPrompt" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#on_btn_prompt_clicked" prefHeight="35.0" prefWidth="60.0" text="Prompt" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="4.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnQuit" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#on_btn_quit_clicked" prefHeight="35.0" prefWidth="60.0" text="Quit" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="hBoxCalculator" alignment="CENTER" layoutX="1.0" layoutY="99.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="526.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="48.0" text="TIME:">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textTime" alignment="CENTER" editable="false" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="191.0" promptText="00:00:00">
+               <opaqueInsets>
+                  <Insets right="30.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="57.0" text="STEPS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textStepNumber" alignment="CENTER" editable="false" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="132.0" promptText="0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></TextField>
+         </children>
+         <padding>
+            <Insets left="5.0" right="15.0" />
+         </padding>
+      </HBox>
+      <Pane fx:id="paneMaze" layoutX="27.0" layoutY="146.0" opacity="0.8" prefHeight="483.0" prefWidth="460.0" />
+   </children>
+</Pane>

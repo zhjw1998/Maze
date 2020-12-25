@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="paneMessage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WinTheGameUIController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="72.0" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="173.0" text="Total Time:">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textTotalTime" alignment="CENTER" editable="false" layoutX="251.0" layoutY="70.0" maxWidth="1.7976931348623157E308">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="95.0" layoutY="132.0" maxWidth="1.7976931348623157E308" prefWidth="156.0" text="Total Steps:">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="textTotalSteps" alignment="CENTER" editable="false" layoutX="251.0" layoutY="130.0" maxWidth="1.7976931348623157E308">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="229.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="353.0" text="Press 'Enter' To Continue!">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
