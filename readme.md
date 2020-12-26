@@ -39,9 +39,9 @@
 		ps：其他迷宫寻路算法：BFS（广度优先搜索算法）
 # 4.运行截图
 	双击Maze.jar运行
-	![Image text](prtsc/init.png)
-	![Image text](prtsc/playing.png)
-	![Image text](prtsc/prompt.png)
-	![Image text](prtsc/win.png)
-	![Image text](prtsc/after-settings.png)
+	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/init.png)
+	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/playing.png)
+	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/prompt.png)
+	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/win.png)
+	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/after-settings.png)
 	
