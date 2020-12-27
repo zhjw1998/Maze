@@ -44,4 +44,5 @@
 	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/prompt.png)
 	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/win.png)
 	![Image text](https://github.com/zhjw1998/Maze/master/prtsc/after-settings.png)
+	(图片显示错误 后期再修改)
 	
